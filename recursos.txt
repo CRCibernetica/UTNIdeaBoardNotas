@@ -1,0 +1,13 @@
+# Recursos IdeaBoard
+
+# Wiki IdeaBoard
+https://github.com/CRCibernetica/circuitpython-ideaboard/wiki
+
+# Liberia IdeaBoard
+https://github.com/CRCibernetica/circuitpython-ideaboard
+
+# CircuitPython
+# Downloads
+https://circuitpython.org/board/crcibernetica_ideaboard/
+# Librerias
+https://circuitpython.org/libraries
