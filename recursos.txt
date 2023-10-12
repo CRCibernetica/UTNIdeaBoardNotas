@@ -1,5 +1,8 @@
 # Recursos IdeaBoard
 
+# Thonny
+https://thonny.org
+
 # Wiki IdeaBoard
 https://github.com/CRCibernetica/circuitpython-ideaboard/wiki
 
