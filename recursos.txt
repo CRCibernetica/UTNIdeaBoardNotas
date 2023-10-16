@@ -10,7 +10,11 @@ https://github.com/CRCibernetica/circuitpython-ideaboard/wiki
 https://github.com/CRCibernetica/circuitpython-ideaboard
 
 # CircuitPython
-# Downloads
+## Downloads
 https://circuitpython.org/board/crcibernetica_ideaboard/
-# Librerias
+
+## Librerias
 https://circuitpython.org/libraries
+
+# Videos en Youtube (Playlist)
+https://www.youtube.com/playlist?list=PLBHa3zvk6qSWw-RL1xEQ-02a4qe_n8akS
