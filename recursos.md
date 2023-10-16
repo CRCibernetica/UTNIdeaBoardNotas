@@ -20,3 +20,6 @@ https://www.youtube.com/playlist?list=PLBHa3zvk6qSWw-RL1xEQ-02a4qe_n8akS
 
 # GitHub Desktop
 https://desktop.github.com/
+
+# Markdown CheatSheet
+https://github.com/im-luka/markdown-cheatsheet
