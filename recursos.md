@@ -1,4 +1,4 @@
-# Recursos IdeaBoard
+# Recursos IdeaBoard CircuitPython
 
 # Thonny
 https://thonny.org
