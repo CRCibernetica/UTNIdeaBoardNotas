@@ -39,10 +39,22 @@ print(longitud)
 print(altura)
 
 # Diccionario
+direccion = {"calle":"Avenida 2",
+             "ciudad":"San Jose"}
+
 estudiante = {
     "nombre":"Jose",
-    "
+    "tel":"5555-5555",
+    "direccion":direccion
     }
+
+# Acceder datos en un diccionario
+nombre = estudiante["nombre"]
+telefono = estudiante["tel"]
+print(nombre)
+print(telefono)
+d = estudiante["direccion"]
+print(d)
 
 
 
