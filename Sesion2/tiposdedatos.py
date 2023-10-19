@@ -55,6 +55,8 @@ print(nombre)
 print(telefono)
 d = estudiante["direccion"]
 print(d)
+ciudad = estudiante["direccion"]["ciudad"]
+print(ciudad)
 
 
 
