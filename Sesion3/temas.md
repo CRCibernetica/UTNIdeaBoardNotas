@@ -1,5 +1,6 @@
 # Temas sesion 3
 ## `import`
+El comando `import` en Python se utiliza para acceder al código en otros módulos. Los módulos son colecciones de funciones y variables que se pueden reutilizar en diferentes programas. La importación de módulos ayuda a estructurar el código de manera efectiva y mantenible
 ## `lib`
 CircuitPython busca las librerias en el siguiente orden:
 * en el directorio raíz
