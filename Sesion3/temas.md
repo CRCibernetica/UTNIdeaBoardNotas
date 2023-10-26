@@ -3,7 +3,9 @@
 ## code.py
 CircuitPython permite guardar multiples archivos y carpetas.
 
-El archivo que empieza a correr se llama `code.py`
+La traducción al español de la frase es:
+
+Al encenderse, CircuitPython busca el archivo llamado code.py y lo ejecuta automáticamente.
 ## Instalacion de librerias y ejemplos
 * Librerias y ejemplos CircuitPython (Adafruit)
 * Librerias y ejemplos CircuitPython de la Comunidad
