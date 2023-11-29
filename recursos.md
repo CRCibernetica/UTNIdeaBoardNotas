@@ -26,3 +26,6 @@ https://github.com/im-luka/markdown-cheatsheet
 
 # Adafruit IO
 https://io.adafruit.com/
+
+# Instalar Node-RED en Windows
+https://nodered.org/docs/getting-started/windows
