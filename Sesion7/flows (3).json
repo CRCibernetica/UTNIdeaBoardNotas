@@ -1,0 +1,265 @@
+[
+    {
+        "id": "598a9c0bea5a91a2",
+        "type": "inject",
+        "z": "fa955c8ce0ef57a6",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "0",
+        "payloadType": "num",
+        "x": 170,
+        "y": 80,
+        "wires": [
+            [
+                "80a8bacc157e4b78"
+            ]
+        ]
+    },
+    {
+        "id": "f8e5b389f9dca03d",
+        "type": "inject",
+        "z": "fa955c8ce0ef57a6",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "1",
+        "payloadType": "num",
+        "x": 170,
+        "y": 120,
+        "wires": [
+            [
+                "80a8bacc157e4b78"
+            ]
+        ]
+    },
+    {
+        "id": "80a8bacc157e4b78",
+        "type": "switch",
+        "z": "fa955c8ce0ef57a6",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "num"
+            },
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 330,
+        "y": 100,
+        "wires": [
+            [
+                "34d470016b56bf88",
+                "d9305e9f334f18e2"
+            ],
+            [
+                "48a8f0e945c244fc",
+                "eb780a2fb3d09191"
+            ]
+        ]
+    },
+    {
+        "id": "34d470016b56bf88",
+        "type": "debug",
+        "z": "fa955c8ce0ef57a6",
+        "name": "debug 4",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 500,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "48a8f0e945c244fc",
+        "type": "debug",
+        "z": "fa955c8ce0ef57a6",
+        "name": "debug 5",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 500,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "92495cea1f202d2e",
+        "type": "mqtt in",
+        "z": "fa955c8ce0ef57a6",
+        "name": "",
+        "topic": "utn/clase7/switch",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "6bf638d8a3069f8c",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 180,
+        "y": 180,
+        "wires": [
+            [
+                "80a8bacc157e4b78"
+            ]
+        ]
+    },
+    {
+        "id": "eb780a2fb3d09191",
+        "type": "change",
+        "z": "fa955c8ce0ef57a6",
+        "name": "prender",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "prendido",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 500,
+        "y": 180,
+        "wires": [
+            [
+                "71baf0b08e9f09d7"
+            ]
+        ]
+    },
+    {
+        "id": "71baf0b08e9f09d7",
+        "type": "debug",
+        "z": "fa955c8ce0ef57a6",
+        "name": "debug 6",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 680,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "d9305e9f334f18e2",
+        "type": "change",
+        "z": "fa955c8ce0ef57a6",
+        "name": "apagar",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "apagado",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 500,
+        "y": 100,
+        "wires": [
+            [
+                "91a703308121d047"
+            ]
+        ]
+    },
+    {
+        "id": "91a703308121d047",
+        "type": "debug",
+        "z": "fa955c8ce0ef57a6",
+        "name": "debug 7",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 700,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "6bf638d8a3069f8c",
+        "type": "mqtt-broker",
+        "name": "Broker",
+        "broker": "broker.hivemq.com",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    }
+]
